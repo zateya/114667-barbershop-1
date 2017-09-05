@@ -129,6 +129,7 @@ input[type="radio"].visually-hidden {
   width: 111px;
   height: 24px;
   padding: 24px 20px;
+  margin: 0;
 }
 
 .main-navigation-wrapper {
@@ -506,7 +507,7 @@ input[type="radio"].visually-hidden {
 .catalog-columns {
   display: flex;
   justify-content: space-between;
-  margin-top: 48px;
+  margin-top: 46px;
 }
 
 .filters {
@@ -516,17 +517,17 @@ input[type="radio"].visually-hidden {
 .filter fieldset {
   padding: 0;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 
   border: none;
 }
 
 .filter fieldset:first-child {
-  margin-bottom: 35px;
+  margin-bottom: 33px;
 }
 
 .filter legend {
-  margin-bottom: 26px;
+  margin-bottom: 28px;
 
   font-size: 24px;
   line-height: 30px;
@@ -542,7 +543,7 @@ input[type="radio"].visually-hidden {
 
 .filter-option {
   margin-bottom: 19px;
-  padding-left: 45px;
+  padding-left: 43px;
 }
 
 .filter-option label {
@@ -562,7 +563,7 @@ input[type="radio"].visually-hidden {
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
-  left: -42px;
+  left: -43px;
   top: 0;
 
   width: 16px;
@@ -576,7 +577,7 @@ input[type="radio"].visually-hidden {
 
   position: absolute;
   top: 4px;
-  left: -38px;
+  left: -39px;
 
   width: 12px;
   height: 12px;
@@ -590,7 +591,7 @@ input[type="radio"].visually-hidden {
   content: "";
 
   position: absolute;
-  left: -42px;
+  left: -43px;
   top: -1px;
 
   width: 16px;
@@ -605,7 +606,7 @@ input[type="radio"].visually-hidden {
 
   position: absolute;
   top: 5px;
-  left: -36px;
+  left: -37px;
 
   width: 8px;
   height: 8px;
@@ -648,7 +649,7 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  padding-top: 4px;
+  padding-top: 6px;
   margin: 0;
   margin-bottom: 25px;
 
@@ -683,8 +684,8 @@ input[type="radio"].visually-hidden {
 
 .catalog-item h3 {
   order: 1;
-  margin-top: 17px;
-  margin-bottom: 12px;
+  margin-top: 12px;
+  margin-bottom: 14px;
   margin-left: 16px;
   margin-right: 15px;
 
