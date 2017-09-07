@@ -10,7 +10,7 @@ body {
   text-transform: uppercase;
   background-color: #000000;
   background-image: url("../img/bg.jpg");
-  background-position: top center;
+  background-position: center 40px;
   background-repeat: no-repeat;
 }
 
@@ -219,7 +219,7 @@ input[type="radio"].visually-hidden {
   content: "";
 
   position: absolute;
-  top: 27px;
+  top: 29px;
   left: 24px;
 
   width: 16px;
@@ -542,17 +542,26 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-option {
-  margin-bottom: 19px;
+  margin-bottom: 17px;
   padding-left: 43px;
 }
 
 .filter-option label {
   position: relative;
-
   display: block;
 
   cursor: pointer;
   user-select: none;
+}
+
+.filter-input-checkbox + label {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.filter-input-radio + label {
+  padding-top: 0px;
+  padding-bottom: 2px;
 }
 
 .filter-input-checkbox:hover + label,
@@ -643,13 +652,13 @@ input[type="radio"].visually-hidden {
 
 .catalog {
   width: 700px;
+  padding-top: 6px;
 }
 
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  padding-top: 6px;
   margin: 0;
   margin-bottom: 25px;
 
@@ -658,7 +667,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-item {
   width: 220px;
-  min-height: 285px;
+  min-height: 286px;
   margin-bottom: 20px;
   margin-right: 20px;
 
@@ -672,7 +681,7 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item:hover {
-  box-shadow: 5px 5px 25px rgba(0, 1, 1, 0.3);
+  box-shadow: 2px 4px 25px rgba(0, 1, 1, 0.3);
 }
 
 .catalog-item a {
@@ -707,16 +716,16 @@ input[type="radio"].visually-hidden {
 
 .catalog-item-price {
   display: flex;
-  margin: 15px;
+  margin: 15px 17px 15px 16px;
   margin-top: 0;
 }
 
 .catalog-item-price b {
   width: 112px;
-  padding: 13px 25px 11px;
+  padding: 12.5px 25px;
 
   font-size: 14px;
-  line-height: 20px;
+  line-height: 18px;
   text-align: center;
 
   background-color: #e5e5e5;
@@ -726,10 +735,10 @@ input[type="radio"].visually-hidden {
 
 .catalog-item-price .button {
   width: 50px;
-  padding: 13px 18px 11px;
+  padding: 12.5px 15px;
   margin-right: 0;
 
-  line-height: 20px;
+  line-height: 18px;
   color: #ffffff;
 }
 
@@ -743,7 +752,7 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination-item {
-  margin-right: 5px;
+  margin-right: 7px;
 }
 
 .pagination-item:last-child {
@@ -752,7 +761,11 @@ input[type="radio"].visually-hidden {
 
 .pagination-item a {
   display: block;
-  padding: 10px 19px;
+  box-sizing: border-box;
+  min-width: 43px;
+  height: 43px;
+  padding: 9px;
+  text-align: center;
 
   color: #ffffff;
 
@@ -830,13 +843,6 @@ input[type="radio"].visually-hidden {
   flex-shrink: 0;
 }
 
-.product-price b {
-  line-height: 20px;
-  text-align: center;
-
-  background-color: #e5e5e5;
-}
-
 .product-info {
   width: 390px;
   padding-top: 23px;
@@ -872,13 +878,13 @@ input[type="radio"].visually-hidden {
 }
 
 .product-price b {
-  width: 112px;
+  min-width: 112px;
   padding-top: 13px;
   padding-left: 36px;
   padding-right: 36px;
   padding-bottom: 11px;
 
-  line-height: 20px;
+  line-height: 18px;
   text-align: center;
 
   background-color: #e5e5e5;
@@ -1085,7 +1091,9 @@ input[type="radio"].visually-hidden {
 }
 
 .inner-page .main-footer {
-  margin-top: 45px;
+  margin-top: 49px;
+  padding-top: 55px;
+
 
   background-image:
     linear-gradient(to bottom, black, transparent),
